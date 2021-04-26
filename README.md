@@ -1,6 +1,25 @@
 # Connect-Four-AI
 Connect Four AI
 
+## About
+
+This project utilizies alpha-beta pruning and a transposition table
+to make a Connect Four game with an AI opponent.
+
+NOTE: If you do not have the cache the AI will take long periods of time to calculate its moves at first. The first
+move in particular might take up to 400 seconds to finish. As you play the game the cache will build and this will
+no longer be a problem
+
+
+## Controls
+
+Left on the arrow-keys moves the player piece left, Right on the arrow-keys moves the player piece right
+and Down on the arrow-keys places the piece. There's a hidden command that will
+show you the best move to take at any given board state you can do by holding Shift+Up on the arrow-keys.
+
+
+## Progression of Project
+
 The original goal of this project was to create an AI capable of playing against a human
 player in the game Connect Four. The goal of the game is to get 4 pieces to line up in a grid
 whether that be horizontally, vertically, or diagonally. This meant that ideally the AI would try
@@ -36,3 +55,5 @@ transposition table were able to make the game far more efficient than minimax w
 alone. The only downside to this implementation is the cache would grow to rather large sizes.
 At one point it was 323MB large but by utilizing some compression I was able to get it down to
 about 18MB large.
+
+
