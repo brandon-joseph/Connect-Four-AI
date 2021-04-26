@@ -1,8 +1,5 @@
 # Connect-Four-AI
 Connect Four AI
-
-## About
-
 This project utilizies alpha-beta pruning and a transposition table
 to make a Connect Four game with an AI opponent.
 
