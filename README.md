@@ -8,6 +8,7 @@ to achieve this matching in a fewer number of turns than the enemy player could 
 same time actively trying to stop the enemy player from winning. It was going to use a minimax
 algorithm to achieve this as the game has rather easily mappable states and setting rewards for
 each should be manageable.
+
 Once I finished the base game implementation in Python using the pygame module, I
 implemented the AI using the minimax algorithm as I originally intended but soon found out
 that was far too inefficient to work. What I failed to take into account was that connect four
@@ -22,6 +23,7 @@ paths that are completely undesirable (which happen to be most of them) to be cu
 explored. This greatly improved performance but it was still far too slow. I was able to run the 
 same experiment that previously failed after two hours in about seven minutes, a substantial
 improvement but still not enough.
+
 Realizing these inefficiencies, I once again sought out to optimize the AI. This time I
 added a transposition table which would be updated each time a reward state is successfully
 calculated. This meant a cache would be built of all the previously calculated moves, meaning
